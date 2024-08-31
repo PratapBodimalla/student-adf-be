@@ -6,6 +6,8 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+
+print("text")
 # MongoDB connection
 client = MongoClient(
     "mongodb://localhost:2717", username="mongoadmin", password="secret"

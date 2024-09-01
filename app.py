@@ -10,7 +10,8 @@ CORS(app)
 print("text")
 # MongoDB connection
 client = MongoClient(
-    "mongodb://localhost:2717", username="mongoadmin", password="secret"
+    # "mongodb://localhost:2717", username="mongoadmin", password="secret"
+    "mongodb://4.188.2.40:27017"
 )
 db = client["qbex"]
 users_collection = db["users"]
